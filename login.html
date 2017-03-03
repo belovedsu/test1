@@ -8,7 +8,7 @@
 
 <body>
     	<table>
-        	<tr><td>id:</td><td><input type="text" id="uname"></td>
+        	<tr><td>id:</td><td><input type="text" id="uname"></td></tr>
             
         <tr><td>pwd:</td><td><input type="password" id="upwd"></td></tr>
          
@@ -22,22 +22,22 @@
 var name= document.getElementById("uname");
 var pwd= document.getElementById("upwd");
 
-document.getElementById("input1").addEventListener("click",nameText);
-document.getElementById("input1").addEventListener("click",pwdText);
+document.getElementById("input1").addEventListener("click",myfunction);
 
-function nameText()
-{
+
+function myfunction(){
+
 if (name.value==""){
-alert("please input an id!");
+alert('please input the id!');
 return false;
 }
-}
-function pwdText(){
+
 if(pwd.value==""){
 alert('please input the password!');
 return false;
 }
 }
+
 </script>
 </body>
 </html>
