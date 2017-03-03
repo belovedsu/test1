@@ -3,34 +3,10 @@
 <head>
 <meta charset="utf-8">
 <title>登陆界面</title>
-<script type = "text/Javascript">
-document.getElementById("input1").addEventListener("click",nameText);
-document.getElementById("input1").addEventListener("click",pwdText);
 
-function nameText()
-{
-var name= document.getElementById("uname");
-
-if (name.value==""){
-alert("please input an id!");
-return false;
-}
-}
-function pwdText(){
-var pwd= document.getElementById("upwd");
-
-if(pwd.value==""){
-alert('please input the password!');
-return false;
-}
-}
-
-</script>
 </head>
 
 <body>
-
-    <div class="login_putin">
     	<table>
         	<tr><td>id:</td><td><input type="text" id="uname"></td>
             
@@ -40,8 +16,28 @@ return false;
    <tr><td></td>
     	<td><button  id="input1">login</button>
 </td></tr>
-
 </table>
-</div>
+
+<script type = "text/Javascript">
+var name= document.getElementById("uname");
+var pwd= document.getElementById("upwd");
+
+document.getElementById("input1").addEventListener("click",nameText);
+document.getElementById("input1").addEventListener("click",pwdText);
+
+function nameText()
+{
+if (name.value==""){
+alert("please input an id!");
+return false;
+}
+}
+function pwdText(){
+if(pwd.value==""){
+alert('please input the password!');
+return false;
+}
+}
+</script>
 </body>
 </html>
